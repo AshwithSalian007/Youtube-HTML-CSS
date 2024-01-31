@@ -1,0 +1,170 @@
+.header{
+
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-color: rgb(240, 239, 239);
+    border-bottom-style: solid;
+    z-index: 100;
+    
+}
+.left_section{
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.hamburger_menu{
+    height: 25px;
+    margin-right: 32px;
+    margin-left: 27px;
+
+}
+.yt_logo{
+    height: 20px;
+}
+
+.middle_section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 65px;
+    margin-right: 35px;
+    max-width: 475px;
+    display: flex;
+}
+
+.searchBox{
+    flex: 1;
+    width: 0;
+    height: 36px;
+    padding-left: 11px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0,0, 0, 0.08);
+}
+.searchBox::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.btn_search{
+
+    height: 39px;
+    width: 65px;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius:2px; 
+    margin-left: 0px;
+    border-style: solid;
+    background-color: rgb(246, 246, 246);
+   
+   
+}
+.btn_search .tooltip, .btn_voice .tooltip, .upload_tooltip .tooltip, .yt_tooltip .tooltip, .notifi_tooltip .tooltip{
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color:white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.btn_search:hover .tooltip ,
+.btn_voice:hover .tooltip,
+.upload_tooltip:hover .tooltip,
+.yt_tooltip:hover .tooltip,
+.notifi_tooltip:hover .tooltip
+{
+    opacity: 1;
+}
+
+.btn_search,.btn_voice,.upload_tooltip,.yt_tooltip,.notifi_tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: relative;
+
+
+}
+
+.btn_voice{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(246, 246, 246);
+    margin-left: 12px;
+    
+    
+}
+.search_img{
+    width: 25px;
+    margin-left: 0;
+}
+
+.right_section{
+
+    flex-shrink: 0;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.upload, .ytapps, .notifi{
+    height: 24px;
+}
+.mychannel{
+    height: 30px;
+    border-radius: 100%;
+}
+
+.notification_container  {
+
+    position: relative;
+
+}
+.notification_count{
+
+    position:absolute;
+    top: -2px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    font-weight: 500;
+    padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    border-radius: 100%;
+
+}
+
